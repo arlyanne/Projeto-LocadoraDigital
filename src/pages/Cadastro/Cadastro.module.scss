@@ -1,34 +1,40 @@
+.h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    margin-bottom: -1px;
+}
+
 .container {
-  max-width: 250px;
-  margin: 0 auto;
-  padding: 70px;
-  text-align: left;
+  display: flex;
   flex-direction: column;
-  
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .label {
-  font-weight: bold;
-  color: black;
-  margin-bottom: 10%;
+  margin-bottom: 10px;
 }
 
 .input {
-  width: 100%;
+  width: 300px;
   padding: 10px;
-  margin-bottom: 15px;
-  font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .button {
-  align-items: center;
+  width: 150px;
   padding: 10px;
+  background-color:  #808080;
+  color: white;
+  border: none;
+  border-radius: 20px;
   font-size: 16px;
-  background-color: rgb(228, 202, 215);
-  color: black;
-  border: 1px solid #ccc;
-  border-radius: 10px;
   cursor: pointer;
 }

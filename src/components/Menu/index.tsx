@@ -9,8 +9,9 @@ export default function Menu() {
         <Container>
           <Navbar.Brand href="#home">Locadora</Navbar.Brand>
           <Nav className="me-auto">
-            <Link to="/">Inicio</Link>
-            <Link to="/">Sobre</Link>
+            <Link className={styles.link} to="/">Inicio</Link>
+            <Link className={styles.link} to="/">Sobre</Link>
+            <Link className={styles.link} to= "/">Categoria</Link>
           </Nav>
         </Container>
       </Navbar>

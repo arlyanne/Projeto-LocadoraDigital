@@ -13,8 +13,8 @@ export default function Cadastro() {
 
   return (
     <div className={styles.container}>
-      <h2>Cadastre-se</h2>
-      <label className={styles.label} htmlFor="text">Nome</label>
+      <h2 className={styles.h2}>Cadastre-se</h2>
+      <label className={styles.label} htmlFor="text"></label>
       <input
         className={styles.input}
         value={nome}
@@ -23,7 +23,7 @@ export default function Cadastro() {
         placeholder="Nome..."
       />
 
-      <label className={styles.label} htmlFor="">Email</label>
+      <label className={styles.label} htmlFor=""></label>
       <input
         className={styles.input}
         value={email}
@@ -32,7 +32,7 @@ export default function Cadastro() {
         placeholder="Email..."
       />
 
-      <label className={styles.label} htmlFor="">Senha</label>
+      <label className={styles.label} htmlFor=""></label>
       <input
         className={styles.input}
         value={senha}
@@ -41,7 +41,7 @@ export default function Cadastro() {
         placeholder="Senha..."
       />
 
-      <label className={styles.label} htmlFor="">Telefone</label>
+      <label className={styles.label} htmlFor=""></label>
       <input
         className={styles.input}
         value={telefone}
