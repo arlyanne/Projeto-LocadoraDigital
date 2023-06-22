@@ -33,11 +33,11 @@ export default function Menu() {
         <Container>
           <Navbar.Brand href="#home">Locadora</Navbar.Brand>
           <Nav className="m-auto">
-            <Link className={styles.link} to="/inicio">Inicio</Link>
-            <Link className={styles.link} to="/">Filmes</Link>
-            <Link className={styles.link} to="/">Series</Link>
-            <Link className={styles.link} to= "/">Atores</Link>
-            <Link className={styles.link} to="/">Sobre</Link>
+            <Link className={styles.link} to="login">Inicio</Link>
+            <Link className={styles.link} to="filmes">Filmes</Link>
+            <Link className={styles.link} to="series">Series</Link>
+            <Link className={styles.link} to= "atores">Atores</Link>
+            <Link className={styles.link} to="sobre">Sobre</Link>
            
           </Nav>
         </Container>
