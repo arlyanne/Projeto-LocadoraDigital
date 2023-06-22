@@ -1,6 +1,5 @@
 import Menu from '../../components/Menu';
 import Container from 'react-bootstrap/Container';
-import Capa from '../../assets/img/capa.jpg';
 import styles from './Home.module.scss';
 import { useState } from 'react';
 

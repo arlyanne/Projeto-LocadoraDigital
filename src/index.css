@@ -1,6 +1,6 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #DCDCDC, #D3D3D3, #C0C0C0, #A9A9A9, #808080, #696969 );

@@ -13,7 +13,7 @@ export default function Cadastro() {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.h2}>Cadastre-se</h2>
+      <h2 className={styles.h2}>REGISTER</h2>
       <label className={styles.label} htmlFor="text"></label>
       <input
         className={styles.input}
