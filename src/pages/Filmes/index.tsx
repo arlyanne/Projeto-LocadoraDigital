@@ -1,4 +1,4 @@
-import styles from './Filmes.module.scss';
+//import styles from './Filmes.module.scss';
 
 export default function Filmes() {
   return(

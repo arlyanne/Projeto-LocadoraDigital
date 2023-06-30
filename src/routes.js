@@ -7,11 +7,13 @@ import Filmes from './pages/Filmes';
 import Atores from './pages/Atores';
 import Series from './pages/Series';
 import Sobre from './pages/Sobre';
+import Menu from './components/Menu';
 
 
 export default function AppRouter() {
   return (
     <Router>
+      <Menu/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='login' element={<Login />} />
@@ -21,7 +23,6 @@ export default function AppRouter() {
         <Route path='series' element={<Series/>}/>
         <Route path='sobre' element={<Sobre/>}/>
       </Routes>
-      <Footer/>
     </Router>
     
   );

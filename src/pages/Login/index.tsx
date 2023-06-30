@@ -7,9 +7,8 @@ export default function Login() {
   const [senha, setSenha] = useState('');
 
   return (
-    <div className={styles.container} >
-      <h4 className={styles.h4}> CUSTOMER LOGIN </h4>
-      <label className={styles.label} htmlFor="text"></label>
+    <>
+      
       <input 
         value={nome}
         type="text" 
@@ -30,6 +29,6 @@ export default function Login() {
       <button className={styles.button}>
         Entrar
       </button>
-    </div>
+    </>
   );
 }
