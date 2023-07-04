@@ -15,8 +15,6 @@
 
 .scroller{
     width: 100%;
-    max-width: var(1500px);
-    min-height: 355px;
     overflow-x: scroll;
     overflow-y: hidden;
     transition: height .5s linear;
@@ -30,5 +28,5 @@
     overflow: visible;
     width: 150px;
     min-width: 150px;
-    margin-left: 20px;
+    margin-right:20px;
 }

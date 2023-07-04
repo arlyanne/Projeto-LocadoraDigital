@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <section>
-      <div>
+      <div className='container'>
         <header className={styles.header}>
           <div className={styles.header__text}>
             <h2>Seja Bem Vindo(a).</h2>
