@@ -1,0 +1,26 @@
+.container {
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+
+    img{
+        width: 90%;
+        border-width: 0;
+        min-width: 300px;
+        width: 300px;
+        height: 450px;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+}
+
+.row {
+}
+
+.item {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
