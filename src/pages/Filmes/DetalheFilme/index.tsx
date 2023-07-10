@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { http } from '../../../global/http';
 import { VITE_IMG } from '../../../global/api_const';
 import styles from './DetalheFilme.module.scss';
+import { Box } from '@mui/material';
+import moment from 'moment';
 
 export default function DetalheFilmes() {
   const parametro = useParams();
@@ -24,30 +26,33 @@ export default function DetalheFilmes() {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       {detalhe && (
-        <div className={`${styles.container} ${styles.row}`}>
-          <div >
-            <img src={VITE_IMG + detalhe.poster_path} alt={detalhe.title} />
+        <Box
+          sx={{
+            width: '100%',
+            backgroundColor: '#CFD9E8',
+          }}
+        >
+          <div className={`${styles.container} ${styles.row} container`}>
+            <div>
+              <img src={VITE_IMG + detalhe.poster_path} alt={detalhe.title} />
+            </div>
+
+            <div className={styles.conteudo}>
+              <h1>{detalhe.title}</h1>{' '} {/* Titulo (Ind)  */}
+              <span>{moment(detalhe.release_date).format('DD/MM/yyyy')} / </span>
+              <span> {detalhe.tagline} </span> {/* Subtitulo(Uma lenda.....) */}
+              <span>
+                {detalhe.genres.map((item: any) => (
+                  <span key={item.id}> {item.name}</span>
+                ))}
+              </span>
+              <h1> Sinopse </h1>
+              <p>{detalhe.overview}</p>
+            </div>
           </div>
-          <div >
-            <h1 className={styles.container}>{detalhe.title}</h1>
-            <p>
-              {detalhe.spoken_languages.map((e: any) => (
-                <span key={e.iso_639_1}>{e.english_name}, </span>
-              ))}
-            </p>
-            <h2> {detalhe.tagline}</h2>
-            <h2>
-              {detalhe.genres.map((item: any) => (
-                <span key={item.id}> {item.name}</span>
-              ))}
-            </h2>
-            <h1> Sinopse </h1>
-            <p></p>
-            {detalhe.overview}
-          </div>
-        </div>
+        </Box>
       )}
     </div>
   );
