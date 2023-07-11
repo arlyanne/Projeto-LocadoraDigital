@@ -22,9 +22,14 @@ export default function Menu() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+            Locadora
           </Typography>
-          <Button color="inherit">Login</Button>
+          <div>
+            <Button color="inherit">Atores</Button>
+            <Button color="inherit">Filmes</Button>
+            <Button color="inherit">Em Cartaz</Button>
+            <Button color="inherit">Login</Button>
+          </div>
         </Toolbar>
       </AppBar>
     </Box>
