@@ -3,10 +3,13 @@ import { useParams } from 'react-router-dom';
 import { http } from '../../../global/http';
 import { VITE_IMG } from '../../../global/api_const';
 import styles from './DetalheFilme.module.scss';
-import { Box } from '@mui/material';
+import { Box, IconButton } from '@mui/material';
 import moment from 'moment';
 import ScrollCast from '../../../components/ScrollCast';
 import Grid from '@mui/material/Grid';
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+
+
 
 export default function DetalheFilmes() {
   const parametro = useParams();
@@ -43,6 +46,8 @@ export default function DetalheFilmes() {
     });
   }, []);
 
+
+
   return (
     <div>
       {detalhe && (
@@ -56,6 +61,9 @@ export default function DetalheFilmes() {
             <div className={`${styles.container} ${styles.row} container`}>
               <div>
                 <img  src={VITE_IMG + detalhe.poster_path} alt={detalhe.title} />
+                <IconButton className={styles.botao_play} aria-label="Example">
+                  <PlayCircleOutlineIcon sx={{ fontSize: 70, color: '#ffff' }} />
+                </IconButton>
               </div>
 
               <div className={styles.conteudo}>
