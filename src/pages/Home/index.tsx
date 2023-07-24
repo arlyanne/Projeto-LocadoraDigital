@@ -65,7 +65,7 @@ export default function Home() {
           </ToggleButtonGroup>
         </div>
 
-        <ScrollMovies data={filmes || []} />
+        <ScrollMovies url="detalhe-filme/id" data={filmes || []} />
       </div>
     </section>
   );
