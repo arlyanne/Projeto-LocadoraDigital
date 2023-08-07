@@ -3,6 +3,7 @@ import styles from './Home.module.scss';
 import { useEffect, useState } from 'react';
 import ScrollMovies from '../../components/ScrollMovies';
 import { http } from '../../global/http';
+import CapaFilme from '../../components/CapaFilme';
 
 
 export default function Home() {
@@ -66,6 +67,12 @@ export default function Home() {
         </div>
 
         <ScrollMovies url="detalhe-filme/id" data={filmes || []} />
+        {/* <CapaFilme 
+        titulo='A menina que roubava livros'
+        data='2014-01-31'
+        popularidade='98%'
+        url=''
+        capa={'https://2.bp.blogspot.com/-TOCRLYBV3N4/UsbbAXBZmkI/AAAAAAAAPuM/DbPHOcuv6HA/s1600/A-Menina-Que-Roubava-Livros-capa-filme-1.jpg'}/> */}
       </div>
     </section>
   );
