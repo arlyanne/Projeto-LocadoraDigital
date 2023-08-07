@@ -2,6 +2,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Chip, Typography } from '
 import styles from './CapaFilme.module.scss';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
+import { VITE_IMG } from '../../global/api_const';
 
 interface Props {
   capa: string
@@ -22,7 +23,7 @@ function CapaFilme(props: Props) {
             <CardMedia
               component="img"
               height="500"
-              image={props.capa} alt="Uma menina segurando Livros"
+              image={VITE_IMG+props.capa} alt="Uma menina segurando Livros"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">

@@ -6,6 +6,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
+import styles from './Menu.module.scss';
 
 export default function Menu() {
   return (
@@ -22,13 +24,13 @@ export default function Menu() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Locadora
+            <Link className={styles.link} to={'/'}>Locadora</Link>
           </Typography>
           <div>
-            <Button color="inherit">Atores</Button>
-            <Button color="inherit">Filmes</Button>
-            <Button color="inherit">Em Cartaz</Button>
-            <Button color="inherit">Login</Button>
+            <Link className={styles.link} to={'filmes'}>Atores</Link>
+            <Link className={styles.link} to={'filmes'}>Filmes</Link>
+            <Link className={styles.link} to={'filmes'}>Em Cartaz</Link>
+            <Link className={styles.link} to={'filmes'}>Login</Link>
           </div>
         </Toolbar>
       </AppBar>
