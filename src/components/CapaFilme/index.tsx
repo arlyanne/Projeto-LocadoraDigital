@@ -18,7 +18,7 @@ function CapaFilme(props: Props) {
   return (
     <div>
       <Link className={styles.link} to={props.url}>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 200 }}>
           <CardActionArea>
             <CardMedia
               component="img"
