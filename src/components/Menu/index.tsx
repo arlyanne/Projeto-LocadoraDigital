@@ -3,7 +3,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
@@ -27,10 +26,11 @@ export default function Menu() {
             <Link className={styles.link} to={'/'}>Locadora</Link>
           </Typography>
           <div>
-            <Link className={styles.link} to={'filmes'}>Atores</Link>
+            <Link className={styles.link} to={'atores'}>Atores</Link>
             <Link className={styles.link} to={'filmes'}>Filmes</Link>
-            <Link className={styles.link} to={'filmes'}>Em Cartaz</Link>
-            <Link className={styles.link} to={'filmes'}>Login</Link>
+            <Link className={styles.link} to={'series'}>Séries</Link>
+            <Link className={styles.link} to={''}>Em Cartaz</Link>
+            <Link className={styles.link} to={'login'}>Login</Link>
           </div>
         </Toolbar>
       </AppBar>

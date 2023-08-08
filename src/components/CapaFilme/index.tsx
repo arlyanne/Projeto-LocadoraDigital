@@ -22,11 +22,11 @@ function CapaFilme(props: Props) {
           <CardActionArea>
             <CardMedia
               component="img"
-              height="500"
+              height="400"
               image={VITE_IMG+props.capa} alt="Uma menina segurando Livros"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant="h6" component="div">
                 {props.titulo}
               </Typography>
               <Typography variant="body2" color="text.secondary">
